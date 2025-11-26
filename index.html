@@ -7,29 +7,30 @@
   </head>
 
   <body class="page-body">
+
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo">
+        <a class="logo" href="index.html" aria-current="page">
           <img class="logo-img" src="./temporary-path.jpeg" width="140" height="70" alt="Седона - логотип сайта">
         </a>
 
         <ul class="navigation-menu">
-          <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
+          <li class="navigation-item navigation-item--active">
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="./catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <div class="user-actions">
-          <a class="user-action" href="#">
+          <a class="user-action user-action--search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
-          <a class="user-action" href="#">
+          <a class="user-action user-action--favorite" href="#">
             <span class="visually-hidden">Избранное</span>
             <span class="icon-quantity">12</span>
           </a>
@@ -39,9 +40,10 @@
     </header>
 
     <main class="main--index">
-      <div class="promo">
+
+      <section class="welcome">
         <h1 class="visually-hidden">Туристический город Седона</h1>
-      </div>
+      </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Cедоны</h2>
@@ -87,7 +89,7 @@
       </section>
 
       <section class="recomendations">
-        <h2 class="visually-hidden">Рекомендации</h2>
+        <h2 class="visually-hidden">Рекомендации при поездке в Седону</h2>
         <p class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="section-description">Опытный персонал и качественное обслуживание!</p>
 
@@ -114,19 +116,19 @@
           в Седоне</p>
         <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
+
     </main>
 
     <section class="subscribe subscribe--index">
-      <h2 class="visually-hidden">Рассылка</h2>
-      <p class="section-title">Подпишитесь на рассылку</p>
+      <h2 class="section-title">Подпишитесь на рассылку</h2>
       <p class="section-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscribe-field">
-          <span class="visually-hidden">Ваш e-mail</span>
+          <span class="visually-hidden">Адрес вашей электронной почты</span>
           <input class="field-input" type="email" name="email" placeholder="Ваш e-mail">
         </label>
-        <button class="subscribe-button button button-large" type="submit">Подписаться</button>
+        <button class="subscribe-button button" type="submit">Подписаться</button>
       </form>
     </section>
 
@@ -134,27 +136,29 @@
       <ul class="footer-social social">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Vkontakte</span>
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
+            <span class="visually-hidden" lang="en">Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
+            <span class="visually-hidden" lang="en">YouTube</span>
           </a>
         </li>
       </ul>
 
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-phone phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <a class="footer-copyright" href="https://htmlacademy.ru/">
-        <span class="visually-hidden">Разработано HTML Academy</span>
+      <a class="footer-copyright copyright" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Разработано в HTML Academy</span>
       </a>
 
     </footer>
+
   </body>
+
 </html>
