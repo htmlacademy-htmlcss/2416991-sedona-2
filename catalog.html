@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="logo" href="index.html">
           <img class="logo-img" src="./temporary-path.jpeg" width="140" height="70" alt="Седона - логотип сайта">
@@ -38,7 +38,7 @@
       </nav>
     </header>
 
-    <main class="main--catalog">
+    <main class="main--catalog" data-test="main">
 
       <header class="main-header">
         <h1 class="main-title">Гостиницы Седоны</h1>
@@ -56,7 +56,7 @@
           </ul>
         </nav>
 
-        <section class="filter">
+        <section class="filter" data-test="filter">
           <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
 
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -151,12 +151,12 @@
 
       </header>
 
-      <section class="results">
+      <section class="results" data-test="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
 
         <div class="view-panel">
           <h3 class="visually-hidden">Панель управления отображением результатов поиска</h3>
-          <p class="section-title catalog-title">Найдено гостиниц: <span class="catalog-count">38</span></p>
+          <p class="section-title results-title">Найдено гостиниц: <span class="results-count">38</span></p>
 
           <form class="view-panel-sorting sorting" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -314,7 +314,7 @@
 
     </main>
 
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <h2 class="section-title">Подпишитесь на рассылку</h2>
       <p class="section-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
@@ -327,7 +327,7 @@
       </form>
     </section>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="footer-social social">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
