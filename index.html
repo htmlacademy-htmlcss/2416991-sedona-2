@@ -17,7 +17,7 @@
         <nav class="navigation">
           <ul class="navigation-menu">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link--current" href="index.html" aria-current="page">Главная</a>
+              <a class="navigation-link navigation-link--current" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -28,14 +28,14 @@
           </ul>
 
           <div class="user-actions">
-            <a class="user-action user-action--icon user-action--search" href="#">
+            <a class="user-action user-action--icon user-action--search" href="search.html">
               <span class="visually-hidden">Поиск</span>
             </a>
-            <a class="user-action user-action--icon user-action--favorite" href="#">
+            <a class="user-action user-action--icon user-action--favorite" href="favorite.html">
               <span class="visually-hidden">Избранное</span>
               <span class="icon-quantity">12</span>
             </a>
-            <a class="button user-action user-action--button" href="#">Хочу сюда!</a>
+            <a class="button user-action user-action--button" href="form.html">Хочу сюда!</a>
           </div>
 
         </nav>
@@ -132,6 +132,7 @@
             в Седоне
           </p>
           <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
+          <!-- ! реализовать открытие модального окна. Согласно ТЗ это кнопка -->
         </section>
       </main>
 
@@ -173,7 +174,11 @@
             </li>
           </ul>
 
-          <a class="footer-phone phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <ul class="footer-telephones telephones">
+            <li class="telephones-item">
+              <a class="telephones-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </li>
+          </ul>
 
           <a class="footer-copyright copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
             rel="noopener noreferrer">

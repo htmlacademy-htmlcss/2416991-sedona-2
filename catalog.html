@@ -23,15 +23,15 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link--current" href="catalog.html" aria-current="page" tabindex="-1">Гостиницы</a>
+              <a class="navigation-link navigation-link--current" aria-current="page" tabindex="-1">Гостиницы</a>
             </li>
           </ul>
 
           <div class="user-actions">
-            <a class="user-action user-action--icon user-action--search" href="#">
+            <a class="user-action user-action--icon user-action--search" href="search.html">
               <span class="visually-hidden">Поиск</span>
             </a>
-            <a class="user-action user-action--icon user-action--favorite" href="#">
+            <a class="user-action user-action--icon user-action--favorite" href="favorite.html">
               <span class="visually-hidden">Избранное</span>
               <span class="icon-quantity">12</span>
             </a>
@@ -174,19 +174,19 @@
 
             <ul class="selector">
               <li class="selector-item">
-                <button class="selector-button selector-button--current selector-button--tile" type="button" tabindex="-1">
+                <a class="selector-button selector-button--current selector-button--tile" href="catalog.html?view=tile" aria-current="page" tabindex="-1">
                   <span class="visually-hidden">Плиткой</span>
-                </button>
+                </a>
               </li>
               <li class="selector-item">
-                <button class="selector-button selector-button--carousel" type="button">
+                <a class="selector-button selector-button--carousel" href="catalog.html?view=card">
                   <span class="visually-hidden">Каруселью</span>
-                </button>
+                </a>
               </li>
               <li class="selector-item">
-                <button class="selector-button selector-button--list" type="button">
+                <a class="selector-button selector-button--list" href="catalog.html?view=list">
                   <span class="visually-hidden">Списком</span>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -197,7 +197,7 @@
             <article class="card">
 
               <h4 class="card-title">
-                <a class="card-link" href="#">Amara Resort & Spa</a>
+                <a class="card-link" href="./hotels/amara.html">Amara Resort & Spa</a>
               </h4>
 
               <img class="card-image" src="images/content/hotels/hotel-1.jpg" width="300" height="212" alt="">
@@ -205,7 +205,7 @@
               <span class="card-housing-type">Гостиница</span>
               <span class="card-price">От 4000 ₽</span>
 
-              <a class="card-button button" href="#">Подробнее</a>
+              <a class="card-button button" href="./hotels/amara.html">Подробнее</a>
               <button class="card-button card-button--to-favorite button" type="button">В избранное</button>
 
               <p class="card-star star star--four">
@@ -217,7 +217,7 @@
             <article class="card">
 
               <h4 class="card-title">
-                <a class="card-link" href="#">Villas at Poco Diablo</a>
+                <a class="card-link" href="./hotels/poco-diablo.html">Villas at Poco Diablo</a>
               </h4>
 
               <img class="card-image" src="images/content/hotels/hotel-2.jpg" width="300" height="212" alt="">
@@ -225,7 +225,7 @@
               <span class="card-housing-type">Гостиница</span>
               <span class="card-price">От 5000 ₽</span>
 
-              <a class="card-button button" href="#">Подробнее</a>
+              <a class="card-button button" href="./hotels/poco-diablo.html">Подробнее</a>
               <button class="card-button card-button--favorite button" type="button">В избранном</button>
 
               <p class="card-star star star--four">
@@ -237,7 +237,7 @@
             <article class="card">
 
               <h4 class="card-title">
-                <a class="card-link" href="#">Desert Quail Inn</a>
+                <a class="card-link" href="./hotels/desert-quail.html">Desert Quail Inn</a>
               </h4>
 
               <img class="card-image" src="images/content/hotels/hotel-3.jpg" width="300" height="212" alt="">
@@ -245,7 +245,7 @@
               <span class="card-housing-type">Гостиница</span>
               <span class="card-price">От 2500 ₽</span>
 
-              <a class="card-button button" href="#">Подробнее</a>
+              <a class="card-button button" href="./hotels/desert-quail.html">Подробнее</a>
               <button class="card-button card-button--to-favorite button" type="button">В избранное</button>
 
               <p class="card-star star star--three">
@@ -257,7 +257,7 @@
             <article class="card">
 
               <h4 class="card-title">
-                <a class="card-link" href="#">GreenTree Inn</a>
+                <a class="card-link" href="./hotels/greentree.html">GreenTree Inn</a>
               </h4>
 
               <img class="card-image" src="images/content/hotels/hotel-4.jpg" width="300" height="212" alt="">
@@ -265,7 +265,7 @@
               <span class="card-housing-type">Гостиница</span>
               <span class="card-price">От 1500 ₽</span>
 
-              <a class="card-button button" href="#">Подробнее</a>
+              <a class="card-button button" href="./hotels/greentree.html">Подробнее</a>
               <button class="card-button card-button--to-favorite button" type="button">В избранное</button>
 
               <p class="card-star star star--two">
@@ -279,26 +279,26 @@
           <nav class="pagination">
             <h3 class="visually-hidden">Список страниц</h3>
 
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item--active">
-                  <a class="pagination-link" tabindex="-1">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">4</a>
-                </li>
-                <li class="pagination-item pagination-item--ellipsis">
-                  <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">10</a>
-                </li>
-              </ul>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item--active">
+                <a class="pagination-link" tabindex="-1">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item pagination-item--ellipsis">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
 
           </nav>
 
@@ -344,7 +344,11 @@
             </li>
           </ul>
 
-          <a class="footer-phone phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <ul class="footer-telephones telephones">
+            <li class="telephones-item">
+              <a class="telephones-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </li>
+          </ul>
 
           <a class="footer-copyright copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
             rel="noopener noreferrer">
