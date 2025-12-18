@@ -111,7 +111,6 @@ body {
 .button--disabled:hover,
 .button--disabled:focus,
 .button--disabled:active {
-  opacity: 0.3;
   background-color: #e5e5e5;
   pointer-events: none;
   outline: none;
@@ -363,15 +362,16 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-button:not(:disabled):hover,
+.subscribe-button:not(:disabled):focus {
   background-color: #68a2ca;
 }
 
-.subscribe-button:active {
+.subscribe-button:not(:disabled):active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
+
 
 .footer-container {
   padding: 25px 70px 11px;
@@ -520,11 +520,12 @@ body {
 .welcome {
   min-height: 485px;
   padding: 51px 51px 82px;
-  background-color: #82b3d3;
+  background-color: #2f4e15;
   background-image: url("../images/background/welcome-overlay.svg"), url("../images/background/welcome-background.jpg");
   background-size: contain, cover;
   background-position: left bottom, center top;
   background-repeat: no-repeat;
+  color: #f2f2f2;
 }
 
 .welcome-image {
@@ -580,12 +581,11 @@ body {
 }
 
 .reasons-item--reversed {
-    grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "image card";
 }
 
-.reasons-card {
-}
+.reasons-card {}
 
 .reason {
   padding: 112.5px 20px;
@@ -677,10 +677,12 @@ body {
 
 .recommendation--food {
   background-image: url("../images/icons/burger.svg");
+  background-position: center 82px;
 }
 
 .recommendation--souvenirs {
   background-image: url("../images/icons/gift.svg");
+  background-position: center 79px;
 }
 
 .recommendation-title {
@@ -726,7 +728,7 @@ body {
 
 .main-header {
   padding: 35px 70px 70px;
-  background-color: #82b3d3;
+  background-color: #2f4e15;
   color: #ffffff;
   background-image: url("../images/background/filter.jpg");
   background-size: cover;
