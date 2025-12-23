@@ -517,7 +517,8 @@ body {
   background-position: center top;
   background-size: cover;
   color: #f2f2f2;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 57px), calc(100% - 250px) calc(100% - 33px), calc(100% - 250px) calc(100% - 57px), 50% 100%, 250px calc(100% - 57px), 250px calc(100% - 33px), 0 calc(100% - 57px));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 57px), calc(100% - 250px) calc(100% - 33px), calc(100% - 250px) calc(100% - 57px), 50% 100%, 250px calc(100% - 57px), 250px calc(100% - 33px), 0 calc(100% - 57px));
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 57px), calc(100% - 250px) calc(100% - 33px), calc(100% - 250px) calc(100% - 57px), 50% 100%, 250px calc(100% - 57px), 250px calc(100% - 33px), 0 calc(100% - 57px));
 }
 
 .welcome-image {
@@ -579,6 +580,8 @@ body {
 }
 
 .reasons-item--has-image .reason {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: card;
   padding: 103px 20px 101px;
   color: #ffffff;
@@ -617,11 +620,24 @@ body {
 }
 
 .reason-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   display: block;
   grid-area: image;
   width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+
+.reasons-item--reversed > .reason-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.card > .reason-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
 }
 
 .recommendations {
@@ -908,13 +924,15 @@ body {
   font-weight: 700;
   line-height: 24px;
   transition: background-color 0.2s ease;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input::-webkit-inner-spin-button,
 .range-input::-webkit-outer-spin-button {
   margin: 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .range-input:disabled {
@@ -1050,7 +1068,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .sorting-select:hover,
@@ -1157,6 +1176,9 @@ body {
 }
 
 .card-title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: title;
   margin: 0 0 15px;
 }
@@ -1178,12 +1200,27 @@ body {
 }
 
 .card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   display: block;
   grid-area: image;
   margin: 0 0 17px;
 }
 
+.reasons-item--reversed > .card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.card > .card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+}
+
 .card-housing-type {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: housing-type;
   margin: 0 0 16px;
   font-size: 18px;
@@ -1191,6 +1228,8 @@ body {
 }
 
 .card-price {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   grid-area: price;
   justify-self: end;
   margin: 0 0 16px;
@@ -1203,11 +1242,14 @@ body {
 }
 
 .card-button {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   position: relative;
   z-index: 2;
   grid-area: button-details;
   align-self: center;
   min-width: 140px;
+  height: -moz-fit-content;
   height: fit-content;
   margin: 0 0 16px;
 }
@@ -1218,10 +1260,14 @@ body {
 }
 
 .card-button--favorite {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
   grid-area: button-favorite;
 }
 
 .card-star {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
   grid-area: stars;
   margin: 0;
 }
@@ -1257,6 +1303,8 @@ body {
 }
 
 .card-rate {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
   grid-area: rate;
   min-width: 140px;
   margin: 0;
@@ -1555,6 +1603,7 @@ body {
 .guests-quantity {
   display: grid;
   grid-template-columns: 40px 30px 40px;
+  width: -moz-fit-content;
   width: fit-content;
   min-height: 48px;
   border-radius: 4px;
@@ -1578,13 +1627,15 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
   margin: 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .quantity-input:disabled {
@@ -1672,11 +1723,13 @@ body {
 }
 
 .quantity-button--plus::after {
-  clip-path: polygon(8px 0, 8px 6px, 14px 6px, 14px 8px, 8px 8px, 8px 14px, 6px 14px, 6px 8px, 0 8px, 0 6px, 6px 6px, 6px 0);
+  -webkit-clip-path: polygon(8px 0, 8px 6px, 14px 6px, 14px 8px, 8px 8px, 8px 14px, 6px 14px, 6px 8px, 0 8px, 0 6px, 6px 6px, 6px 0);
+          clip-path: polygon(8px 0, 8px 6px, 14px 6px, 14px 8px, 8px 8px, 8px 14px, 6px 14px, 6px 8px, 0 8px, 0 6px, 6px 6px, 6px 0);
 }
 
 .quantity-button--minus::after {
-  clip-path: polygon(0 6px, 14px 6px, 14px 8px, 0 8px);
+  -webkit-clip-path: polygon(0 6px, 14px 6px, 14px 8px, 0 8px);
+          clip-path: polygon(0 6px, 14px 6px, 14px 8px, 0 8px);
 }
 
 .modal-submit {
