@@ -923,12 +923,12 @@ body {
 }
 
 .range-input:not(:disabled):hover {
-  background-color: #e5e5e5;
+  background-color: #e6e6e6;
 }
 
 .range-input:not(:disabled):focus {
   outline: 3px solid #83b3d3;
-  background-color: #e5e5e5;
+  background-color: #e6e6e6;
 }
 
 .range-input:not(:placeholder-shown):invalid {
@@ -1210,6 +1210,11 @@ body {
   min-width: 140px;
   height: fit-content;
   margin: 0 0 16px;
+}
+
+.card-button:disabled {
+  pointer-events: all;
+  cursor: default;
 }
 
 .card-button--favorite {
@@ -1504,6 +1509,8 @@ body {
 }
 
 .date-button:not(:disabled):focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
   opacity: 1;
 }
 
@@ -1708,6 +1715,8 @@ body {
   z-index: 2;
   display: none;
   width: 256px;
+  max-height: 250px;
+  overflow-y: auto;
   padding: 20px 18px 23px 22px;
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
