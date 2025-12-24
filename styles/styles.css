@@ -540,7 +540,7 @@ body {
 
 .reasons-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   padding: 0;
   list-style: none;
@@ -548,12 +548,6 @@ body {
 
 .reasons-item {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.reasons-item:not(.reasons-item--has-image) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .reasons-item:nth-child(2n + 1):not(.reasons-item--has-image) {
@@ -650,7 +644,7 @@ body {
 
 .recommendations-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   padding: 0;
   list-style: none;
@@ -794,7 +788,7 @@ body {
 
 .filter-form {
   display: grid;
-  grid-template-columns: 200px 200px 1fr 241px;
+  grid-template-columns: 200px 271px 1fr 241px;
   gap: 20px;
 }
 
@@ -802,10 +796,9 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.filter-fieldset--price {
-  margin: 0 0 0 71px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .filter-title {
@@ -1181,6 +1174,9 @@ body {
   -ms-grid-column-span: 3;
   grid-area: title;
   margin: 0 0 15px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word
 }
 
 .card-link {
