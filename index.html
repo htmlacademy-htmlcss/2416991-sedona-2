@@ -302,74 +302,7 @@
         </section>
       </div>
     </div>
-    <script>
-      // Код открытия/закрытия модального окна для демонстрации
-      const openButton = document.querySelector(".search-button");
-      const overlay = document.querySelector(".modal-overlay");
-      const closeButton = document.querySelector(".modal-close-button");
-      const form = document.querySelector(".search-form");
-      const tooltip = document.querySelector(".tooltip");
-      const body = document.body;
-
-      const HIDDEN_CLASS = "modal-overlay--hidden";
-      const BODY_LOCK_CLASS = "body--locked";
-
-      let isOpen = false;
-
-      function openModal(event) {
-        event.preventDefault();
-        if (isOpen) return;
-
-        overlay.classList.remove(HIDDEN_CLASS);
-        body.classList.add(BODY_LOCK_CLASS);
-        document.addEventListener("keydown", onEscPress);
-        isOpen = true;
-      }
-
-      function closeModal() {
-        if (!isOpen) return;
-
-        overlay.classList.add(HIDDEN_CLASS);
-        body.classList.remove(BODY_LOCK_CLASS);
-        tooltip.classList.remove("tooltip--active");
-        document.removeEventListener("keydown", onEscPress);
-
-        if (form) {
-          form.reset();
-        }
-
-        isOpen = false;
-      }
-
-      function onEscPress(event) {
-        if (event.key === "Escape") {
-          closeModal();
-        }
-      }
-
-      function onTooltipClick(event) {
-        event.preventDefault();
-        tooltip.classList.toggle("tooltip--active");
-      }
-
-      if (openButton && overlay) {
-        openButton.addEventListener("click", openModal);
-
-        overlay.addEventListener("click", function (event) {
-          if (event.target === overlay) {
-            closeModal();
-          }
-        });
-
-        if (closeButton) {
-          closeButton.addEventListener("click", closeModal);
-        }
-      }
-
-      if (tooltip) {
-        tooltip.addEventListener("click", onTooltipClick);
-      }
-    </script>
+    <script src="scripts/script.js"></script>
   </body>
 
 </html>
