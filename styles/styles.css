@@ -480,6 +480,7 @@ body {
 
 .footer-copyright {
   justify-self: end;
+  align-self: flex-start;
   margin: 0 -23px 0 -5px;
 }
 
